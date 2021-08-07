@@ -8,8 +8,18 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static guru.qa.configs.Credentials.credentials;
 
 public class PracticeFormTests extends TestBase {
+
+    @Test
+    void credTest(){
+        String login = credentials.login();
+        String password = credentials.password();
+
+        System.out.println("login ->"+credentials.login());
+        System.out.println("pass->" + credentials.password());
+    }
 
     @Test
     void positiveFillTest(){
