@@ -12,14 +12,7 @@ import static guru.qa.configs.Credentials.credentials;
 
 public class PracticeFormTests extends TestBase {
 
-    @Test
-    void credTest(){
-        String login = credentials.login();
-        String password = credentials.password();
 
-        System.out.println("login ->"+credentials.login());
-        System.out.println("pass->" + credentials.password());
-    }
 
     @Test
     void positiveFillTest(){
