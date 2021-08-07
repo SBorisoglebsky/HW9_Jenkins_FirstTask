@@ -26,8 +26,9 @@ public class TestBase {
 
         String login = credentials.login();
         String password = credentials.password();
-       // System.out.printf("TEST->" + format("https://%s:%s@" + System.getProperty("url"), login, password));
-        Configuration.remote = format("https://%s:%s@" + System.getProperty("url"), login, password);
+        System.out.printf("TEST->" + format("https://%s:%s@" + System.getProperty("url"), login, password));
+       // Configuration.remote = format("https://%s:%s@" + System.getProperty("url"), login, password);
+        Configuration.remote = System.getProperty("url");
     }
 
     @AfterEach
