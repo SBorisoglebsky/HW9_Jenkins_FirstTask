@@ -7,7 +7,7 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.13.9",
+def allureVersion = "2.14.0",
     selenideVersion = "5.23.0",
     junitVersion = "5.7.2"
 
@@ -28,7 +28,7 @@ dependencies {
             "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly(
-            "org.slf4j:slf4j-simple:1.7.29",
+            "org.slf4j:slf4j-simple:1.7.32",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
